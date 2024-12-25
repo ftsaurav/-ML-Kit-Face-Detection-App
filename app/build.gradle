@@ -1,0 +1,50 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+}
+
+android {
+    namespace 'com.example.facerecognition'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.facerecognition"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation libs.appcompat.v161
+    implementation libs.material
+    implementation libs.constraintlayout.v214
+
+    // ML Kit for face detection
+    implementation 'com.google.mlkit:face-detection:16.1.2'
+
+    implementation libs.cameraview
+
+    implementation libs.android.image.cropper.v450
+    implementation libs.firebase.common
+    implementation libs.play.services.ads
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

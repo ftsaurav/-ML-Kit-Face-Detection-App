@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "820117566653",
+    "project_id": "face-recognition-af485",
+    "storage_bucket": "face-recognition-af485.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820117566653:android:efe30568c2c4e035c073d4",
+        "android_client_info": {
+          "package_name": "com.example.facerecognition"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfrobJWuAMx1TrYkfLHnv8GbJLSZJD9CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
